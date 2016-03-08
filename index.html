@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html data-ng-app="deliveryApp">
+<head>
+    <title>Deliveries Manager</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- JS externos -->
+    <link rel="stylesheet" href="http://getbootstrap.com/dist/css/bootstrap.min.css"/>
+    <!-- CSS locales -->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+<body data-ng-cloak="">
+
+    <header class="navbar navbar-inner navbar-fixed-top"></header>
+    
+    <div data-ng-view="" id="ng-view"></div>
+    
+    <div id="footer" class="navbar navbar-inner navbar-fixed-bottom"></div>
+
+    <!-- JS externos -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-route.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-animate.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.11.0/ui-bootstrap.js"></script>
+    <script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.11.0.js"></script>
+	
+    <!-- JS locales -->
+    <script src="app/grid/grid.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/services/deliveriesService.js"></script>
+    <script src="app/services/dataService.js"></script>
+    <script src="app/services/modalService.js"></script>
+    <script src="app/controllers/deliveries/deliveryEditController.js"></script>
+    <script src="app/controllers/deliveries/deliveriesController.js"></script>
+    <script src="app/filters/nameAddressFilter.js"></script>
+    
+
+</body>
+</html>
+
+

@@ -1,0 +1,257 @@
+<div class="view">
+    <div class="container">
+        <header>
+            <h3><span class="glyphicon glyphicon-edit"></span> {{title}} Delivery</h3>
+        </header>
+        <form name="editForm" novalidate>
+            <div class="deliveryEdit">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4>Datos Administrativos</h4>
+                        <br />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">
+                        Nombre:
+                    </div>
+                    <div class="col-md-10">
+                        <input type="text" name="name" class="form-control" data-ng-model="delivery.name" maxlength="50" required />
+                        <span class="errorMessage" ng-show="editForm.name.$dirty && editForm.name.$invalid">
+                            El nombre es requerido
+                        </span>
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-md-2">
+                        Descripcion:
+                    </div>
+                    <div class="col-md-10">
+                        <textarea type="text" name="description" class="form-control" data-ng-model="delivery.description" maxlength="1000" required></textarea>
+                        <span class="errorMessage" ng-show="editForm.description.$dirty && editForm.description.$invalid">
+                            La descripcion requerida
+                        </span>
+                        <div>Restan {{1000-delivery.description.length}} caracteres</div>
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-md-2">
+                        Especialidades:
+                    </div>
+                    <div class="col-md-10">
+                        <textarea type="text" name="specialities" class="form-control" data-ng-model="delivery.specialities" maxlength="500"></textarea>
+                        <span class="errorMessage" ng-show="editForm.specialities.$dirty && editForm.specialities.$invalid">
+                            Las especialidades son requeridas
+                        </span>
+                        <div>Restan {{500-delivery.description.length}} caracteres</div>
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-md-2">
+                        Direccion:
+                    </div>
+                    <div class="col-md-10">
+                        <input type="text" name="lastName" class="form-control" data-ng-model="delivery.address" maxlength="200" required />
+                        <span class="errorMessage" ng-show="editForm.lastName.$dirty && editForm.lastName.$invalid">
+                            La direccion requerida
+                        </span>
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-md-2">
+                        Horario de atencion:
+                    </div>
+                    <div class="col-md-10">
+                        <div class="timePickerContainer">
+                            <timepicker hour-step="1" minute-step="1" show-meridian="false" name="openTime" data-ng-model="delivery.openTime"></timepicker>
+                        </div>
+                        <div class="timePickerContainer"> <br/><br/> hasta </div>
+                        <div class="timePickerContainer">
+                            <timepicker hour-step="1" minute-step="1" show-meridian="false" name="closeTime" data-ng-model="delivery.closeTime"></timepicker>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-md-2">
+                        Telefono:
+                    </div>
+                    <div class="col-md-10">
+                        <input type="text" name="telephone" class="form-control" data-ng-model="delivery.telephone" maxlength="50" required />
+                        <span class="errorMessage" ng-show="editForm.telephone.$dirty && editForm.telephone.$invalid">
+                            El telefono es requerido
+                        </span>
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-md-2">
+                        Email:
+                    </div>
+                    <div class="col-md-10">
+                        <!-- type="email" causing a problem with Breeze so using regex -->
+                        <input type="email" name="email" 
+                               class="form-control"
+                               data-ng-model="delivery.email"
+                               data-wc-unique="{key: {{delivery.id}}, property: 'email'}"
+                               maxlength="100"
+                               required />
+                        <span class="errorMessage" ng-show="editForm.email.$dirty && editForm.email.$error.unique">
+                            Email already in use
+                        </span>
+                    </div>
+                </div>
+                <br />
+            </div>
+            
+            <div class="deliveryEdit half">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4>Datos Administrativos</h4>
+                        <br />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">
+                        Nombre:
+                    </div>
+                    <div class="col-md-10">
+                        <input type="text" name="administrativeName" class="form-control" data-ng-model="delivery.administrative.name" maxlength="200" required />
+                        <span class="errorMessage" ng-show="editForm.administrativeName.$dirty && editForm.administrativeName.$invalid">
+                            El nombre es requerido
+                        </span>
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-md-2">
+                        Apellido:
+                    </div>
+                    <div class="col-md-10">
+                        <input type="text" name="administrativeSurname" class="form-control" data-ng-model="delivery.administrative.surname" maxlength="200" required />
+                        <span class="errorMessage" ng-show="editForm.administrativeSurname.$dirty && editForm.administrativeSurname.$invalid">
+                            El apellido es requerido
+                        </span>
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-md-2">
+                        Telefono:
+                    </div>
+                    <div class="col-md-10">
+                        <input type="text" name="administrativeTelephone" class="form-control" data-ng-model="delivery.administrative.telephone" maxlength="100" required />
+                        <span class="errorMessage" ng-show="editForm.administrativeTelephone.$dirty && editForm.administrativeTelephone.$invalid">
+                            El Telefono es requerido
+                        </span>
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-md-2">
+                        Email:
+                    </div>
+                    <div class="col-md-10">
+                        <input type="email" name="administrativeEmail" class="form-control" data-ng-model="delivery.administrative.email" maxlength="100" required />
+                        <span class="errorMessage" ng-show="editForm.administrativeEmail.$dirty && editForm.administrativeEmail.$invalid">
+                            El Email es requerido
+                        </span>
+                    </div>
+                </div>
+                <br />
+            </div>
+            
+            <div class="deliveryEdit half">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4>Datos Comerciales</h4>
+                        <br />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            <label class="checkbox">
+                                <input type="checkbox" name="sameAsAdministrative" value="sameAsAdministrative"
+                                       data-ng-model="sameAsAdministrative" />
+                                Idem Contacto Admistrativo
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">
+                        Nombre:
+                    </div>
+                    <div class="col-md-10">
+                        <input type="text" name="commercialName" class="form-control" data-ng-model="delivery.commercial.name"  maxlength="200" ng-required="!sameAsAdministrative" />
+                        <span class="errorMessage" ng-show="editForm.commercialName.$dirty && editForm.commercialName.$invalid">
+                            El nombre es requerido
+                        </span>
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-md-2">
+                        Apellido:
+                    </div>
+                    <div class="col-md-10">
+                        <input type="text" name="commercialSurname" class="form-control" data-ng-model="delivery.commercial.surname"  maxlength="200" ng-required="!sameAsAdministrative" />
+                        <span class="errorMessage" ng-show="editForm.commercialSurname.$dirty && editForm.commercialSurname.$invalid">
+                            El apellido es requerido
+                        </span>
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-md-2">
+                        Telefono:
+                    </div>
+                    <div class="col-md-10">
+                        <input type="text" name="commercialTelephone" class="form-control" data-ng-model="delivery.commercial.telephone" ng-required="!sameAsAdministrative" />
+                        <span class="errorMessage" ng-show="editForm.commercialTelephone.$dirty && editForm.commercialTelephone.$invalid">
+                            El Telefono es requerido
+                        </span>
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-md-2">
+                        Email:
+                    </div>
+                    <div class="col-md-10">
+                        <input type="email" name="commercialEmail" class="form-control" data-ng-model="delivery.commercial.email" ng-required="!sameAsAdministrative" />
+                        <span class="errorMessage" ng-show="editForm.commercialEmail.$dirty && editForm.commercialEmail.$invalid">
+                            El Email es requerido
+                        </span>
+                    </div>
+                </div>
+                <br />
+            </div>
+                
+            <div class="row">
+                <div class="col-md-12">
+                    <button style="float:right;margin:5px;" class="btn btn-danger" data-ng-if="edit" data-ng-click="navigate('/deliveries')">Cancelar</button>
+                    <button style="float:right;margin:5px;" type="submit" class="btn btn-primary" data-ng-click="save()" ng-disabled="editForm.$invalid || !editForm.$dirty">{{buttonText}}</button>
+                </div>
+            </div>
+            <br />
+            <div class="statusRow">
+                <br />
+                <div class="label label-success" data-ng-show="updateStatus">
+                    <span class="glyphicon glyphicon-thumbs-up icon-white"></span>&nbsp;&nbsp;Delivery Guardado!
+                </div>
+            </div>
+            <div class="statusRow">
+                <br />
+                <div class="label label-important" data-ng-show="errorMessage">
+                    <span class="glyphicon glyphicon-thumbs-down icon-white"></span>&nbsp;&nbsp;Error: {{ errorMessage }}
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

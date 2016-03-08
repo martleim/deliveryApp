@@ -1,0 +1,2002 @@
+[
+	{
+		"name": "Bar BritÃ¡nico",
+		"address": "Avenida MillÃ¡n 2949",
+		"description": "Pizza, Parrilla, Carnes",
+		"specialities": "Pizza, Parrilla, Carnes",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "Bar Nuevo Imperial",
+		"address": "Rio Branco 1449",
+		"description": "Sandwiches, Pizza, Minutas, RotiserÃ­as",
+		"specialities": "Sandwiches, Pizza, Minutas, RotiserÃ­as",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+    {
+		"name": "25 RestÃ³",
+		"address": "25 de Mayo 599",
+		"description": "Chivitos, Minutas, Ensaladas, CafeterÃ­a, Milane...",
+		"specialities": "Chivitos, Minutas, Ensaladas, CafeterÃ­a, Milane...",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "Bar SarandÃ­",
+		"address": "SarandÃ­ 350",
+		"description": "Sandwiches, Pizza, Chivitos, Minutas, Hamburgue...",
+		"specialities": "Sandwiches, Pizza, Chivitos, Minutas, Hamburgue...",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "Big Mamma Ciudad Vieja",
+		"address": "25 de Mayo ",
+		"description": "Sandwiches, Minutas, Pastas, Ensaladas, Pescado...",
+		"specialities": "Sandwiches, Minutas, Pastas, Ensaladas, Pescado...",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "Blas Pizzetas Estilo Italiano",
+		"address": "Punta Carretas Shopping ",
+		"description": "Chivitos, Pastas, Ensaladas, Pescados, Calzone,...",
+		"specialities": "Chivitos, Pastas, Ensaladas, Pescados, Calzone,...",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "Bugs Cakes",
+		"address": "Julio Cesar 1423",
+		"description": "Tortas, Cupcakes, Pasteleria",
+		"specialities": "Tortas, Cupcakes, Pasteleria",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "Caffe Doc Ciudad Vieja",
+		"address": "Treinta y Tres 1496",
+		"description": "Sandwiches, Comida saludable, Tartas",
+		"specialities": "Sandwiches, Comida saludable, Tartas",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "Casa Singer Express",
+		"address": "18 de Julio 1612",
+		"description": "Vegetariana, Comida saludable",
+		"specialities": "Vegetariana, Comida saludable",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "Chivitos lo de Pepe",
+		"address": "Roque Graseras ",
+		"description": "Sandwiches, Chivitos, Minutas, Pastas, Ensalada...",
+		"specialities": "Sandwiches, Chivitos, Minutas, Pastas, Ensalada...",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "ColÃ³n Bar & PizzerÃ­a",
+		"address": "Bulevar Artigas 3654",
+		"description": "Sandwiches, Pizza, Chivitos, Empanadas, Minutas...",
+		"specialities": "Sandwiches, Pizza, Chivitos, Empanadas, Minutas...",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "Cupcakes Uruguay - Catering",
+		"address": "",
+		"description": "Catering, Cupcakes",
+		"specialities": "Catering, Cupcakes",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "Danone Uruguay",
+		"address": "Ruta 101 ",
+		"description": "Postres, Productos lÃ¡cteos",
+		"specialities": "Postres, Productos lÃ¡cteos",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "Desayunos Dora",
+		"address": "",
+		"description": "Desayunos",
+		"specialities": "Desayunos",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "Desayunos y Meriendas a Domicilio",
+		"address": "",
+		"description": "Desayunos",
+		"specialities": "Desayunos",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "El Emporio de la Pizza",
+		"address": "Bv. EspaÃ±a 2496",
+		"description": "Sandwiches, Pizza, Pastas, Pescados, Hamburgues...",
+		"specialities": "Sandwiches, Pizza, Pastas, Pescados, Hamburgues...",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "El Gaucho",
+		"address": "18 de Julio 1449",
+		"description": "Sandwiches, Pizza, Chivitos, Empanadas, Minutas...",
+		"specialities": "Sandwiches, Pizza, Chivitos, Empanadas, Minutas...",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "El MenÃº",
+		"address": "Doctor Roberto Berros 2366",
+		"description": "Sandwiches, Chivitos, Minutas, Pastas, Ensalada...",
+		"specialities": "Sandwiches, Chivitos, Minutas, Pastas, Ensalada...",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "El Navegante",
+		"address": "25 de Mayo 349",
+		"description": "Sandwiches, Pastas, Ensaladas, Pescados, Desayu...",
+		"specialities": "Sandwiches, Pastas, Ensaladas, Pescados, Desayu...",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "El VolcÃ¡n del sabor",
+		"address": "Mendoza 2728",
+		"description": "Empanadas",
+		"specialities": "Empanadas",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "Empanattas",
+		"address": "Paraguay 1442",
+		"description": "Empanadas, Tartas",
+		"specialities": "Empanadas, Tartas",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "Fito's",
+		"address": "CufrÃ© 1872",
+		"description": "Sandwiches, Chivitos, Minutas, Milanesas, Tarta...",
+		"specialities": "Sandwiches, Chivitos, Minutas, Milanesas, Tarta...",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "FrÃ­o Gourmet",
+		"address": "Guayaqui 2981",
+		"description": "Pizza",
+		"specialities": "Pizza",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "GastronomÃ­a Palacio",
+		"address": "San MartÃ­n 3005",
+		"description": "Sandwiches, Pizza, Empanadas, Parrilla, MenÃº ej...",
+		"specialities": "Sandwiches, Pizza, Empanadas, Parrilla, MenÃº ej...",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "Grido Aguada",
+		"address": "Av. Livertador 2057",
+		"description": "Helados",
+		"specialities": "Helados",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "Il Mondo ConvenciÃ³n",
+		"address": "18 de Julio 922",
+		"description": "Sandwiches, Pizza, Chivitos, Minutas, Pastas, P...",
+		"specialities": "Sandwiches, Pizza, Chivitos, Minutas, Pastas, P...",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "Il Mondo Paraguay",
+		"address": "18 de Julio 1105",
+		"description": "Sandwiches, Pizza, Chivitos, Minutas, Pastas, E...",
+		"specialities": "Sandwiches, Pizza, Chivitos, Minutas, Pastas, E...",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "Il Mondo Prado",
+		"address": "Av. MillÃ¡n 3800",
+		"description": "Sandwiches, Pizza, Chivitos, Minutas, Pastas, E...",
+		"specialities": "Sandwiches, Pizza, Chivitos, Minutas, Pastas, E...",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "Il Mondo Punta Carretas",
+		"address": "21 de Setiembre 2816",
+		"description": "Sandwiches, Pizza, Chivitos, Minutas, Pastas, E...",
+		"specialities": "Sandwiches, Pizza, Chivitos, Minutas, Pastas, E...",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "Jugo Wanabana",
+		"address": "",
+		"description": "Licuados y jugos, Comida saludable",
+		"specialities": "Licuados y jugos, Comida saludable",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "Kalambria Eventos",
+		"address": "",
+		"description": "Sandwiches, Pizza, Empanadas, Catering",
+		"specialities": "Sandwiches, Pizza, Empanadas, Catering",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "La Balconada",
+		"address": "Cooper ",
+		"description": "Chivitos",
+		"specialities": "Chivitos",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "La Catedral de los Sandwiches",
+		"address": "SarandÃ­ 502",
+		"description": "Sandwiches, Chivitos, Minutas, Ensaladas, Comid...",
+		"specialities": "Sandwiches, Chivitos, Minutas, Ensaladas, Comid...",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "La Facha",
+		"address": "Ariel 4950",
+		"description": "Pizza, Empanadas, Minutas",
+		"specialities": "Pizza, Empanadas, Minutas",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "La Familia",
+		"address": "PaysandÃº 1008",
+		"description": "Sandwiches, Chivitos, Empanadas, Minutas, Cafet...",
+		"specialities": "Sandwiches, Chivitos, Empanadas, Minutas, Cafet...",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "La Fortaleza Cerro",
+		"address": "Grecia 4255",
+		"description": "Sandwiches, Pizza, Chivitos, Empanadas, Minutas...",
+		"specialities": "Sandwiches, Pizza, Chivitos, Empanadas, Minutas...",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "La Nueva PequeÃ±a",
+		"address": "Defensa 2398",
+		"description": "Empanadas, Minutas, Pastas",
+		"specialities": "Empanadas, Minutas, Pastas",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "La PapoÃ±ita",
+		"address": "18 de Julio 1649",
+		"description": "Sandwiches, Pizza, Chivitos, Pastas, Ensaladas,...",
+		"specialities": "Sandwiches, Pizza, Chivitos, Pastas, Ensaladas,...",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "La Pasiva Carrasco",
+		"address": "Arocena 1644",
+		"description": "Sandwiches, Pizza, Chivitos, Minutas, Pastas, H...",
+		"specialities": "Sandwiches, Pizza, Chivitos, Minutas, Pastas, H...",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "La Pasiva Gral. Flores",
+		"address": "Gral. Flores 3303",
+		"description": "Pizza, Chivitos, Pastas",
+		"specialities": "Pizza, Chivitos, Pastas",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "La Pasiva Rivera y L. A. de Herrera",
+		"address": "Rivera ",
+		"description": "Sandwiches, Pizza, Chivitos, Minutas, Pastas, P...",
+		"specialities": "Sandwiches, Pizza, Chivitos, Minutas, Pastas, P...",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "La PequeÃ±a Nueva Lunch",
+		"address": "Defensa 2398",
+		"description": "Sandwiches, Tartas, Servicio de lunch",
+		"specialities": "Sandwiches, Tartas, Servicio de lunch",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "La Petite CrÃªperie",
+		"address": "Costa Rica ",
+		"description": "Crepes",
+		"specialities": "Crepes",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "La Sin Rival",
+		"address": "Soriano 929",
+		"description": "Sandwiches, Chivitos, Empanadas, Minutas, Pasta...",
+		"specialities": "Sandwiches, Chivitos, Empanadas, Minutas, Pasta...",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "La Spezia RistÃ³",
+		"address": "Peatonal SarandÃ­ 413",
+		"description": "Empanadas, Ensaladas, Pastas, Tartas",
+		"specialities": "Empanadas, Ensaladas, Pastas, Tartas",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "La TentaciÃ³n PizzerÃ­a - ChiviterÃ­a",
+		"address": "RamÃ³n Anador 3751",
+		"description": "Sandwiches, Pizza, Chivitos, Minutas, Pastas, P...",
+		"specialities": "Sandwiches, Pizza, Chivitos, Minutas, Pastas, P...",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "La Tortuguita",
+		"address": "TristÃ¡n Narvaja 1597",
+		"description": "Sandwiches, Pizza, Chivitos, Empanadas, Minutas...",
+		"specialities": "Sandwiches, Pizza, Chivitos, Empanadas, Minutas...",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "Las Caseritas",
+		"address": "Pichincha 3350",
+		"description": "Milanesas",
+		"specialities": "Milanesas",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "Las Tejas",
+		"address": "Carrasco 4301",
+		"description": "Pizza, Chivitos, Empanadas, Minutas, Pastas, En...",
+		"specialities": "Pizza, Chivitos, Empanadas, Minutas, Pastas, En...",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "LicorerÃ­a Savoy",
+		"address": "Andes 1366 1366",
+		"description": "Bebidas",
+		"specialities": "Bebidas",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "Los Pepes",
+		"address": "Santa FÃ© 1201",
+		"description": "Sandwiches, Pizza, Chivitos, Empanadas, Minutas...",
+		"specialities": "Sandwiches, Pizza, Chivitos, Empanadas, Minutas...",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "Los Trovadores",
+		"address": "Gabriel Pereira 3202",
+		"description": "Helados",
+		"specialities": "Helados",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "Lost",
+		"address": "Av General Rivera 2403",
+		"description": "Chivitos, Minutas, Parrilla",
+		"specialities": "Chivitos, Minutas, Parrilla",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "Marley ",
+		"address": "Cipriano Payan 2958",
+		"description": "Alfajores",
+		"specialities": "Alfajores",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "Minie Foods",
+		"address": "Marco Bruto 1386",
+		"description": "Viandas y congelados, Meriendas, Comida saludable",
+		"specialities": "Viandas y congelados, Meriendas, Comida saludable",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "Moritas",
+		"address": "Garibaldi 2645",
+		"description": "Sandwiches, Pizza, Chivitos, Empanadas, Minutas...",
+		"specialities": "Sandwiches, Pizza, Chivitos, Empanadas, Minutas...",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "Nonna Delicias a tu Puerta",
+		"address": "Carrasco 5369",
+		"description": "Desayunos",
+		"specialities": "Desayunos",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "Nueva Balconada",
+		"address": "Comercio 2350",
+		"description": "Sandwiches, Pizza, Chivitos, Hamburguesas, Mila...",
+		"specialities": "Sandwiches, Pizza, Chivitos, Hamburguesas, Mila...",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "Pama",
+		"address": "JoanicÃ³ 3653",
+		"description": "Sandwiches, Pizza, Empanadas, Minutas, Pastas, ...",
+		"specialities": "Sandwiches, Pizza, Empanadas, Minutas, Pastas, ...",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "PanaderÃ­a del CordÃ³n",
+		"address": "Arenal Grande 1416",
+		"description": "Sandwiches, Empanadas, Minutas, Ensaladas, Tartas",
+		"specialities": "Sandwiches, Empanadas, Minutas, Ensaladas, Tartas",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "Panteca Gourmet  RincÃ³n",
+		"address": "RincÃ³n 453",
+		"description": "Sandwiches, Chivitos, Ensaladas, Desayunos, Caf...",
+		"specialities": "Sandwiches, Chivitos, Ensaladas, Desayunos, Caf...",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "Panteca Gourmet Carrasco",
+		"address": "Arocena 1555",
+		"description": "Sandwiches, Chivitos, Ensaladas, Desayunos, Caf...",
+		"specialities": "Sandwiches, Chivitos, Ensaladas, Desayunos, Caf...",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "Panteca Gourmet ConvenciÃ³n",
+		"address": "ConvenciÃ³n 1399",
+		"description": "Sandwiches",
+		"specialities": "Sandwiches",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "Papichulo Buceo",
+		"address": "RamÃ³n Anador 3850",
+		"description": "Sandwiches, Pizza, Chivitos, Empanadas, Minutas...",
+		"specialities": "Sandwiches, Pizza, Chivitos, Empanadas, Minutas...",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "Pardao CafÃ© Restobar",
+		"address": "Luis Alberto de Herrera 3964",
+		"description": "Chivitos, Minutas, Pastas, Pescados, Milanesas,...",
+		"specialities": "Chivitos, Minutas, Pastas, Pescados, Milanesas,...",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "Pizza Subte",
+		"address": "Ejido 1327",
+		"description": "Sandwiches, Pizza, Empanadas, Minutas, Pastas, ...",
+		"specialities": "Sandwiches, Pizza, Empanadas, Minutas, Pastas, ...",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "Pizza Trouville 21 de Setiembre",
+		"address": "21 de Setiembre 3104",
+		"description": "Sandwiches, Pizza, Chivitos, Minutas, Pastas, E...",
+		"specialities": "Sandwiches, Pizza, Chivitos, Minutas, Pastas, E...",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "Pizzas Branca",
+		"address": "Gonzalo RamÃ­rez 1700",
+		"description": "Sandwiches, Pizza, Chivitos, Minutas, Ensaladas...",
+		"specialities": "Sandwiches, Pizza, Chivitos, Minutas, Ensaladas...",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "PizzerÃ­a Plaza 25",
+		"address": "Laureles 706",
+		"description": "Sandwiches, Pizza, Chivitos, Minutas, Pastas, P...",
+		"specialities": "Sandwiches, Pizza, Chivitos, Minutas, Pastas, P...",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "PizzerÃ­a RodelÃº",
+		"address": "Requena GarcÃ­a s/n ",
+		"description": "Sandwiches, Pizza, Chivitos, Minutas, Pastas, E...",
+		"specialities": "Sandwiches, Pizza, Chivitos, Minutas, Pastas, E...",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "PizzerÃ­a Trouville 26 de Marzo",
+		"address": "Gabriel Pereira 3151",
+		"description": "Sandwiches, Pizza, Chivitos, Minutas, Pastas, E...",
+		"specialities": "Sandwiches, Pizza, Chivitos, Minutas, Pastas, E...",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "Plaza Gourmet",
+		"address": "Colonia 1072",
+		"description": "Sandwiches, Empanadas, Crepes, Calzone, Tartas,...",
+		"specialities": "Sandwiches, Empanadas, Crepes, Calzone, Tartas,...",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "Porto Vanila - Art Carrasco",
+		"address": "Av. Italia 7519",
+		"description": "Sandwiches, Desayunos, CafeterÃ­a, Tartas",
+		"specialities": "Sandwiches, Desayunos, CafeterÃ­a, Tartas",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "Restobar SalomÃ©",
+		"address": "Zabala 1538",
+		"description": "Sandwiches, Chivitos, Minutas, Pastas, Crepes, ...",
+		"specialities": "Sandwiches, Chivitos, Minutas, Pastas, Crepes, ...",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "Rickysi+",
+		"address": "Shakespeare 1646",
+		"description": "Pizza, Empanadas, Pastas, Hamburguesas, Milanes...",
+		"specialities": "Pizza, Empanadas, Pastas, Hamburguesas, Milanes...",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "RotiserÃ­a Pocoyo",
+		"address": "",
+		"description": "Sandwiches, Minutas, Ensaladas, MenÃº ejecutivo,...",
+		"specialities": "Sandwiches, Minutas, Ensaladas, MenÃº ejecutivo,...",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "Sabor & Arte",
+		"address": "Galicia 1221",
+		"description": "Sandwiches, Chivitos, Empanadas, Minutas, Ensal...",
+		"specialities": "Sandwiches, Chivitos, Empanadas, Minutas, Ensal...",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "Saludable",
+		"address": "Libertad 2537",
+		"description": "Vegetariana, Viandas y congelados, Comida salud...",
+		"specialities": "Vegetariana, Viandas y congelados, Comida salud...",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "Sazonarte Catering",
+		"address": "Gonzalo RamÃ­rez 1754",
+		"description": "Catering",
+		"specialities": "Catering",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "Sinestesia",
+		"address": "YacarÃ© 1568",
+		"description": "Ensaladas, Medialunas, Bocattas",
+		"specialities": "Ensaladas, Medialunas, Bocattas",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "Sorrentinos Artesanales",
+		"address": "Marco Bruto 1210",
+		"description": "Pastas",
+		"specialities": "Pastas",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "Valentinos Coffee",
+		"address": "Justicia 2120",
+		"description": "Sandwiches, Empanadas, CafeterÃ­a, Medialunas, P...",
+		"specialities": "Sandwiches, Empanadas, CafeterÃ­a, Medialunas, P...",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "Vogchumian Comida Casera",
+		"address": "Triunfo 540",
+		"description": "Empanadas, Tartas, Comida casera",
+		"specialities": "Empanadas, Tartas, Comida casera",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "10 y Pico Bar",
+		"address": "Canelones 1602",
+		"description": "Pizza, Minutas",
+		"specialities": "Pizza, Minutas",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "26 Sushi & Co",
+		"address": "26 de Marzo 1236",
+		"description": "Sushi, Comida japonesa",
+		"specialities": "Sushi, Comida japonesa",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "44 Open Bar",
+		"address": "La Paz ",
+		"description": "Sandwiches, Chivitos, Minutas, Pastas, Pizzetas",
+		"specialities": "Sandwiches, Chivitos, Minutas, Pastas, Pizzetas",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "A Punto Parrilla",
+		"address": "Palmar 2396",
+		"description": "Pastas, Ensaladas, Parrilla, Vegetariana, Comid...",
+		"specialities": "Pastas, Ensaladas, Parrilla, Vegetariana, Comid...",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "Abril",
+		"address": "Monte Caseros 2851",
+		"description": "Sandwiches, Pizza, Chivitos, Minutas, Pastas, E...",
+		"specialities": "Sandwiches, Pizza, Chivitos, Minutas, Pastas, E...",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "AlcalÃ¡",
+		"address": "Gral Flores 2099",
+		"description": "Pizza, Chivitos, Minutas, Pastas, MenÃº ejecutiv...",
+		"specialities": "Pizza, Chivitos, Minutas, Pastas, MenÃº ejecutiv...",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "Alto Palermo Aguada",
+		"address": "AsunciÃ³n 1450",
+		"description": "Pizza, Chivitos, Minutas, Postres, Parrilla, Mi...",
+		"specialities": "Pizza, Chivitos, Minutas, Postres, Parrilla, Mi...",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "Anicetto",
+		"address": "Dr. Alejandro Schroeder 6415",
+		"description": "Pastas, Ensaladas, Pescados, Carnes",
+		"specialities": "Pastas, Ensaladas, Pescados, Carnes",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "Araucho Delivery & Bar",
+		"address": "Francisco Araucho 1193",
+		"description": "Pizza, Chivitos, Empanadas, Minutas, Pastas, Po...",
+		"specialities": "Pizza, Chivitos, Empanadas, Minutas, Pastas, Po...",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "Arbiza RestÃ³",
+		"address": "TacuarembÃ³ 1566",
+		"description": "BaurÃº, Comida brasileÃ±a, Xis",
+		"specialities": "BaurÃº, Comida brasileÃ±a, Xis",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "Arttomate",
+		"address": "Av. Lezica 6485",
+		"description": "Pizza",
+		"specialities": "Pizza",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "Asia Restaurant Chino",
+		"address": "2 de Mayo 1367",
+		"description": "Postres, Pescados, Comida china, Bebidas, Entra...",
+		"specialities": "Postres, Pescados, Comida china, Bebidas, Entra...",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "Asian Food",
+		"address": "Bartolito Mitre 2602",
+		"description": "Vegetariana, Comida china, Comida thai, Wok, Co...",
+		"specialities": "Vegetariana, Comida china, Comida thai, Wok, Co...",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "Asterisco BistrÃ³ MÃ©todo Ravenna",
+		"address": "Bv. Gral. Artigas 574",
+		"description": "Viandas y congelados, Comida saludable, DietÃ©tico",
+		"specialities": "Viandas y congelados, Comida saludable, DietÃ©tico",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "Aura Empanadas",
+		"address": "Rivera 3252",
+		"description": "Empanadas",
+		"specialities": "Empanadas",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "Bamboo",
+		"address": "Luis Alberto de Herrera ",
+		"description": "Sushi, Ceviche",
+		"specialities": "Sushi, Ceviche",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	},
+	{
+		"name": "Bar 36",
+		"address": "ConvenciÃ³n 1152",
+		"description": "Sandwiches, Chivitos, Minutas, Pastas, Ensalada...",
+		"specialities": "Sandwiches, Chivitos, Minutas, Pastas, Ensalada...",
+		"openTime": "11:00","closeTime": "20:00",
+		"telephone": "2222222",
+		"administrative": {
+			"name": "nombre1",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre1@prueba.com"
+		},
+		"commercial": {
+			"name": "nombre2",
+			"surname": "apellido1",
+			"telephone": "222222",
+			"email": "nombre2@prueba.com"
+		}
+	}
+]

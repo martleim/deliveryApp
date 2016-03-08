@@ -1,0 +1,25 @@
+<div class="deliveries view indent">
+    <div class="container">
+        <header>
+                <h3>Listado de Deliveries</h3>
+            <ul class="nav nav-pills" style="float:left">
+              <li class="active"><h5>Filtros</h5></li>
+              <li>
+                  <input type="text" name="name" class="form-control" placeholder="Nombre"  data-ng-model="nameSearchText" data-ng-change="searchTextChanged();" />
+              </li>
+              <li>
+                    <input type="text" name="name" class="form-control" placeholder="Direccion" data-ng-model="addressSearchText" data-ng-change="searchTextChanged();" />
+              </li>
+            </ul>
+            <button type="button" class="btn btn-primary" style="float:right" ng-click="navigate('/deliveryadd')">Agregar Delivery</button>
+        </header>
+        <br />
+        <br />
+        <grid config="deliveriesGridConfig"></grid>
+        <ul class="nav nav-pills" style="float:right;">
+           <li><a ng-click="lastPage()">&lt;</a></li>
+           <li ng-repeat="page in navigatablePages" ng-class="(page==currentPage?'active':'')"><a ng-click="pageChanged(page)">{{page}}</a></li>
+           <li><a ng-click="nextPage()">&gt;</a></li>
+        </ul>
+    </div>
+</div>
