@@ -1,10 +1,9 @@
 (function () {
 
-    var app = angular.module("deliveryApp",["ngRoute","ml-grid","ui.bootstrap"]);
-
-    app.config(["$routeProvider", function ($routeProvider) {
-        //var viewBase = "/app/views/";
-		var viewBase = "app/views/";
+	
+    var app = angular.module("deliveryApp",["ngRoute"/*,"grid","ui.bootstrap"*/])
+	.config( function ($routeProvider/*, grid, uiBootstrap*/){
+		var viewBase = UrlConfig.views;
 
         $routeProvider
 			.when("/deliveries", {
@@ -21,9 +20,23 @@
             })
             .otherwise({ redirectTo: "/deliveries" });
 
-    }]);
+    })
+	.run(
+    function ($rootScope, $location) {
 
-    app.run();
+        //$rootScope.$on("$routeChangeStart", function (event, next, current) {
+        //    if (next && next.$$route && next.$$route.secure) {
+        //        if (!authService.user.isAuthenticated) {
+        //            authService.redirectToLogin();
+        //       }
+        //    }
+        //});
+        
+        $rootScope.$on("serviceError", function (event, next, current) {
+            alert(next.message);
+        });
+
+    });
 
 }());
 

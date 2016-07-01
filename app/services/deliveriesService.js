@@ -1,49 +1,33 @@
 (function () {
 
     var deliveriesService = function ($http) {
-        var modelUrl = "app/services/deliveries.json",
+        var modelUrl = UrlConfig.baseUrl+UrlConfig.models.deliveries,
             factory = {};
 			
 		factory.deliveries=[];
         
         factory.getDeliveries = function (pageIndex, pageSize) {
-            return this.getPagedDeliveries(pageIndex, pageSize);
+            return $http.get(modelUrl+"/page?limit="+pageSize+"&start="+pageIndex);
         };
         
         factory.insertDelivery = function (delivery) {
-            factory.deliveries.push(delivery);
+            return $http.post(modelUrl, delivery);
         };
 
-        factory.updateDelivery = function (oldName,delivery) {
-            for(var i=0;i<this.deliveries.length;i++){
-                if(oldName==this.deliveries[i].name)
-                    return this.deliveries[i]=delivery;
-            }
+        factory.updateDelivery = function (name,delivery) {
+            return $http.put(modelUrl+"/"+name, delivery);
         };
 
         factory.deleteDelivery = function (name) {
-            for(var i=0;i<this.deliveries.length;i++){
-                if(name==this.deliveries[i].name)
-                    return this.deliveries.splice(i,1);
-            }
+            return $http.delete(modelUrl+"/"+name);
         };
 
         factory.getDelivery = function (name) {
-            for(var i=0;i<this.deliveries.length;i++){
-                if(name==this.deliveries[i].name)
-                    return this.deliveries[i];
-            }
+            return $http.get(modelUrl+"/"+name);
         };
         
         factory.initialize = function(){
-            var scope = this;
-            return $http.get(modelUrl).then(function (results) {
-                if(scope.deliveries.length==0){
-                    scope.deliveries = results.data;
-                }
-                return scope.deliveries;
-            });
-                       
+                    
         }
 		
 		factory.getPagedDeliveries = function(pageIndex, pageSize) {

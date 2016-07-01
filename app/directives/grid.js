@@ -1,10 +1,6 @@
-var mlGrid;
-(function (mlGrid) {
+(function () {
     
-    var moduleName = "ml-grid";
-    var gridTagName = "grid";
-    
-    angular.module(moduleName, function(){}).directive(gridTagName, function ($compile) {
+    angular.module("deliveryApp").directive("grid", function ($compile) {
         var compile=$compile;
         return{
             restrict: "E",
@@ -65,5 +61,5 @@ var mlGrid;
         }
     });
     
-})(mlGrid||(mlGrid={}))
+})()
 

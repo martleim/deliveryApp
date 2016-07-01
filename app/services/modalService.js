@@ -51,6 +51,6 @@
         };
     };
 
-    angular.module('deliveryApp').service('modalService', ['$modal', modalService]);
+    angular.module("deliveryApp").factory("modalService", ['$modal', modalService]);
 
 }());
