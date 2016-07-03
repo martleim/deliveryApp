@@ -70,14 +70,19 @@
         }
 
         function init() {
-            if (deliveryName != "") {
-                $scope.delivery = angular.copy(dataService.getDelivery(deliveryName));
-            }
-            if($scope.delivery){
-                $scope.delivery.openTime=parseTimeToDate($scope.delivery.openTime);
-                $scope.delivery.closeTime=parseTimeToDate($scope.delivery.closeTime);
-            }
-            onRouteChangeOff = $rootScope.$on('$locationChangeStart', routeChange);
+			dataService.getDelivery(deliveryName).then(function(ret){
+				
+				if (deliveryName != "") {
+					$scope.delivery = angular.copy(ret.data.result);
+				}
+				if($scope.delivery){
+					$scope.delivery.openTime=parseTimeToDate($scope.delivery.openTime);
+					$scope.delivery.closeTime=parseTimeToDate($scope.delivery.closeTime);
+				}
+				onRouteChangeOff = $rootScope.$on('$locationChangeStart', routeChange);
+				
+			})
+            
         }
         
         $scope.navigate = function (url) {

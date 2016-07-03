@@ -34,11 +34,22 @@
 		
 		factory.get = function (method,url,data,header) {
             var urlobj=decodeUrl(url);
-			var model=models[urlobj.route[urlobj.route.length-2]];
-			var from=parseInt(urlobj.params.limit)*parseInt(urlobj.params.start);
-			var rets=model.slice(from, from+parseInt(urlobj.params.limit));
-			return [200, {results:rets, totalRecords:model.length }];
-
+			var model=models[urlobj.route[4]];
+			var rets;
+			if(urlobj.params.limit){
+				var from=parseInt(urlobj.params.limit)*parseInt(urlobj.params.start);
+				rets=model.slice(from, from+parseInt(urlobj.params.limit));
+				return [200, {results:rets, totalRecords:model.length }];
+			}else{
+				var name=urlobj.route[5];
+				for(var i=0;i<model.length;i++){
+					if(name==model[i].name){
+						rets = model[i];
+						return [200, {result:rets }];
+					}
+				}
+			}
+			
         };
         
         factory.post = function (method,url,data,header) {
@@ -51,17 +62,19 @@
         factory.put = function (method,url,data,header) {
             var urlobj=decodeUrl(url);
 			var model=models[urlobj.route[urlobj.route.length-2]];
+			var oldName=urlobj.route[urlobj.route.length-1];
             for(var i=0;i<model.length;i++){
                 if(oldName==model[i].name)
-                    return model[i]=delivery;
+                    return model[i]=data;
             }
         };
 
         factory.delete = function (method,url,data,header) {
             var urlobj=decodeUrl(url);
-			var model=models[urlobj.model];
+			var model=models[urlobj.route[urlobj.route.length-2]];
+			var oldName=urlobj.route[urlobj.route.length-1];
             for(var i=0;i<model.length;i++){
-                if(name==model[i].name)
+                if(oldName==model[i].name)
                     return model.splice(i,1);
             }
         };
