@@ -1,8 +1,8 @@
 (function () {
 
 	
-    var app = angular.module("deliveryApp",["ngRoute","ui.bootstrap", "e2eMocks"/*,"grid"*/])
-	.config( function ($routeProvider/*, grid*/){
+    var app = angular.module("deliveryApp",["ngRoute","ui.bootstrap", "e2eMocks"])
+	.config( function ($routeProvider){
 		var viewBase = appConfig.views;
 
         $routeProvider
@@ -24,14 +24,6 @@
 	.run(
     function ($rootScope, $location) {
 
-        //$rootScope.$on("$routeChangeStart", function (event, next, current) {
-        //    if (next && next.$$route && next.$$route.secure) {
-        //        if (!authService.user.isAuthenticated) {
-        //            authService.redirectToLogin();
-        //       }
-        //    }
-        //});
-        
         $rootScope.$on("serviceError", function (event, next, current) {
             alert(next.message);
         });
