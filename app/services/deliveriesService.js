@@ -1,12 +1,13 @@
 (function () {
 
     var deliveriesService = function ($http) {
-        var modelUrl = UrlConfig.baseUrl+UrlConfig.models.deliveries,
+        var modelUrl = appConfig.baseUrl+appConfig.models.deliveries,
+			pageSize= appConfig.pageSize,
             factory = {};
 			
 		factory.deliveries=[];
         
-        factory.getDeliveries = function (pageIndex, pageSize) {
+        factory.getDeliveries = function (pageIndex) {
             return $http.get(modelUrl+"/page?limit="+pageSize+"&start="+pageIndex);
         };
         
@@ -27,7 +28,7 @@
         };
         
         factory.initialize = function(){
-                    
+        	return this.getDeliveries(0);
         }
 		
 		factory.getPagedDeliveries = function(pageIndex, pageSize) {

@@ -74,12 +74,14 @@
         };
 
         $scope.updateDeliveries = function(){
-            var res=dataService.getDeliveries(this.currentPage,this.pageSize);
-            $scope.deliveries=res.results;
-            $scope.unFilteredDeliveries=$scope.deliveries;
-            
-            $scope.totalRecords=res.totalRecords;
-            $scope.setNavigatablePages();
+            dataService.getDeliveries(this.currentPage,this.pageSize).then(function(res){
+				res=res.data;
+				$scope.deliveries=res.results;
+				$scope.unFilteredDeliveries=$scope.deliveries;
+
+				$scope.totalRecords=res.totalRecords;
+				$scope.setNavigatablePages();	
+			});
         }
         
         $scope.setNavigatablePages = function(){

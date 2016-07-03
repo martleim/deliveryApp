@@ -1,6 +1,6 @@
 (function () {
 
-    var modalService = function ($modal) {
+    var modalService = function ($uibModal) {
 
         var modalDefaults = {
             backdrop: true,
@@ -47,10 +47,11 @@
                 tempModalDefaults.controller.$inject = ['$scope', '$modalInstance'];
             }
 
-            return $modal.open(tempModalDefaults).result;
+            return $uibModal.open(tempModalDefaults).result;
         };
+		return this;
     };
 
-    angular.module("deliveryApp").factory("modalService", ['$modal', modalService]);
+    angular.module("deliveryApp").factory("modalService", ['$uibModal', modalService]);
 
 }());

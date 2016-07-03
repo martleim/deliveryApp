@@ -1,9 +1,9 @@
 (function () {
 
 	
-    var app = angular.module("deliveryApp",["ngRoute"/*,"grid","ui.bootstrap"*/])
-	.config( function ($routeProvider/*, grid, uiBootstrap*/){
-		var viewBase = UrlConfig.views;
+    var app = angular.module("deliveryApp",["ngRoute","ui.bootstrap", "e2eMocks"/*,"grid"*/])
+	.config( function ($routeProvider/*, grid*/){
+		var viewBase = appConfig.views;
 
         $routeProvider
 			.when("/deliveries", {
