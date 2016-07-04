@@ -42,11 +42,15 @@
 				return [200, {results:rets, totalRecords:model.length }];
 			}else{
 				var name=urlobj.route[5];
-				for(var i=0;i<model.length;i++){
-					if(name==model[i].name){
-						rets = model[i];
-						return [200, {result:rets }];
+				if(name && name!=""){
+					for(var i=0;i<model.length;i++){
+						if(name==model[i].name){
+							rets = model[i];
+							return [200, {result:rets }];
+						}
 					}
+				}else{
+					return [200, {results:model}];
 				}
 			}
 			
@@ -86,12 +90,15 @@
 		
 		
 		for(var modelUrl in appConfig.models){
-			$http.get(baseUrl+"app/services/"+modelUrl+".json").then(
-				function(result){
-					models[modelUrl]=result.data;
-				}
-			);
-			
+			var loadingModel=modelUrl;
+			var loadModel=function(loadingModel,models){
+				$http.get(baseUrl+"app/services/"+loadingModel+".json").then(
+					function(result){
+						models[loadingModel]=result.data;
+					}
+				);
+			}
+			loadModel(loadingModel,models);
 			var url=new RegExp(baseUrl + modelUrl + "+.*");
 
 			$httpBackend.whenGET(url).respond(factory.get);
