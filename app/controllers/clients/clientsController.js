@@ -12,9 +12,10 @@
             data:"clients",
             columns:[{name:"name",label:"Nombre", width:"30%", sortable:true, sortFunction:function(a,b) { return a.name<b.name; }},
                     {name:"address",label:"Direccion", width:"30%"},
-                    {name:"telephone",label:"Telefono", width:"30%"/*,cellRenderer:function(row){ 
-                        return row.phone;
-                    }*/ },
+                    {name:"phone",label:"Telefono", width:"20%" },
+					{name:"gender",label:"Sexo", width:"10%" ,cellRenderer:function(row){ 
+                        return (row.gender=='f')?'Mujer':'Hombre';
+                    } },
                     {name:"name",label:"", width:"10%",cellRenderer:"<button type='button' class='btn btn-danger glyphicon glyphicon-remove-sign' style='margin-right:8px;height:30px' ng-click='delete(row)'></button><button type='button' class='btn btn-primary glyphicon glyphicon-pencil' style='margin-right:8px;height:30px' ng-click='editClient(row)'></button>"}]
         };
 		
