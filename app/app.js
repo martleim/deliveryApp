@@ -1,7 +1,7 @@
 (function () {
 
 	
-    var app = angular.module("deliveryApp",["ngRoute","ui.bootstrap", "e2eMocks"])
+    var app = angular.module("deliveryApp",["ngRoute","ui.bootstrap"])
 	.config( function ($routeProvider){
 		var viewBase = appConfig.views;
 
