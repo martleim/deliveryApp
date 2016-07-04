@@ -7,5 +7,5 @@ var appConfig= {
 		clients:'clients',
 	},
     checkForChanges: "checkForChanges",
-	pageSize:5
+	pageSize:10
 }
