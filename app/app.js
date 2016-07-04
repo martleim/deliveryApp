@@ -18,9 +18,26 @@
                 controller: "DeliveryEditController",
                 templateUrl: viewBase + "deliveries/deliveryEdit.html"
             })
+			.when("/clients", {
+                controller: "ClientsController",
+                templateUrl: viewBase + "clients/clients.html"
+            })
+			.when("/clientedit/:clientName", {
+                controller: "ClientEditController",
+                templateUrl: viewBase + "clients/clientEdit.html"
+            })
+            .when("/clientadd", {
+                controller: "ClientEditController",
+                templateUrl: viewBase + "clients/clientEdit.html"
+            })
             .otherwise({ redirectTo: "/deliveries" });
 
     })
+	.controller("navBarController", function($scope, $location){
+		$scope.isActive = function (viewLocation) { 
+			return viewLocation === $location.path();
+		};
+	})
 	.run(
     function ($rootScope, $location) {
 

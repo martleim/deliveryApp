@@ -1,21 +1,21 @@
 (function () {
 
-    var DeliveriesController = function ($scope, $location, $filter, dataService, modalService) {
+    var ClientsController = function ($scope, $location, $filter, dataService, modalService) {
 
-        $scope.deliveries = [];
-        $scope.unFilteredDeliveries = [];
+        $scope.clients = [];
+        $scope.unFilteredClients = [];
         
         $scope.addressSearchText = null;
         $scope.nameSearchText = null;
         
-        $scope.deliveriesGridConfig={
-            data:"deliveries",
+        $scope.clientsGridConfig={
+            data:"clients",
             columns:[{name:"name",label:"Nombre", width:"30%", sortable:true, sortFunction:function(a,b) { return a.name<b.name; }},
                     {name:"address",label:"Direccion", width:"30%"},
-                    {name:"telephone",label:"Telefono", width:"30%",cellRenderer:function(row){ 
-                        return row.telephone;
-                    } },
-                    {name:"name",label:"", width:"10%",cellRenderer:"<button type='button' class='btn btn-danger glyphicon glyphicon-remove-sign' style='margin-right:8px;height:30px' ng-click='delete(row)'></button><button type='button' class='btn btn-primary glyphicon glyphicon-pencil' style='margin-right:8px;height:30px' ng-click='editDelivery(row)'></button>"}]
+                    {name:"telephone",label:"Telefono", width:"30%"/*,cellRenderer:function(row){ 
+                        return row.phone;
+                    }*/ },
+                    {name:"name",label:"", width:"10%",cellRenderer:"<button type='button' class='btn btn-danger glyphicon glyphicon-remove-sign' style='margin-right:8px;height:30px' ng-click='delete(row)'></button><button type='button' class='btn btn-primary glyphicon glyphicon-pencil' style='margin-right:8px;height:30px' ng-click='editClient(row)'></button>"}]
         };
 		
 
@@ -30,7 +30,7 @@
         $scope.pageChanged = function (page) {
             if(page>=1 && page<=$scope.totalPages){
                 $scope.currentPage = page;
-                $scope.updateDeliveries();
+                $scope.updateClients();
             }
         };
         
@@ -42,27 +42,27 @@
             $scope.pageChanged($scope.currentPage-1);
         };
 
-        $scope.delete = function (delivery) {
+        $scope.delete = function (client) {
             
-            var name = delivery.name;
+            var name = client.name;
 
             var modalOptions = {
                 closeButtonText: 'Cancelar',
-                actionButtonText: 'Eliminar Delivery',
+                actionButtonText: 'Eliminar Cliente',
                 headerText: 'Eliminar ' + name + '?',
-                bodyText: 'Esta seguro que desea eliminar este Delivery?'
+                bodyText: 'Esta seguro que desea eliminar este Cliente?'
             };
 
             modalService.showModal({}, modalOptions).then(function (result) {
                 if (result === 'ok') {
-                    dataService.deliveriesService.deleteDelivery(name);
-                    $scope.updateDeliveries();
+                    dataService.clientsService.deleteClient(name);
+                    $scope.updateClients();
                 }
             });
         };
         
-        $scope.editDelivery=function(delivery){
-            $location.path("/deliveryedit/"+delivery.name);
+        $scope.editClient=function(client){
+            $location.path("/clientedit/"+client.name);
         };
 
         $scope.navigate = function (url) {
@@ -70,14 +70,14 @@
         };
 
         $scope.searchTextChanged = function () {
-            this.filterDeliveries($scope.nameSearchText, $scope.addressSearchText);
+            this.filterClients($scope.nameSearchText, $scope.addressSearchText);
         };
 
-        $scope.updateDeliveries = function(){
-            dataService.deliveriesService.getDeliveries(this.currentPage,this.pageSize).then(function(res){
+        $scope.updateClients = function(){
+            dataService.clientsService.getClients(this.currentPage,this.pageSize).then(function(res){
 				res=res.data;
-				$scope.deliveries=res.results;
-				$scope.unFilteredDeliveries=$scope.deliveries;
+				$scope.clients=res.results;
+				$scope.unFilteredClients=$scope.clients;
 
 				$scope.totalRecords=res.totalRecords;
 				$scope.setNavigatablePages();	
@@ -101,23 +101,23 @@
         
         
 
-        $scope.filterDeliveries=function(name,address) {
-            var filteredDeliveries = $filter("nameAddressFilter")($scope.unFilteredDeliveries, name, address);
-            $scope.deliveries=filteredDeliveries;
+        $scope.filterClients=function(name,address) {
+            var filteredClients = $filter("nameAddressFilter")($scope.unFilteredClients, name, address);
+            $scope.clients=filteredClients;
             
         }
 
         function init() {
-            dataService.deliveriesService.initialize().then(function(p) {
-                $scope.updateDeliveries();
+            dataService.clientsService.initialize().then(function(p) {
+                $scope.updateClients();
             });
         }
             
         init();
     };
 
-    DeliveriesController.$inject = ['$scope', '$location', '$filter', 'dataService', 'modalService'];
+    ClientsController.$inject = ['$scope', '$location', '$filter', 'dataService', 'modalService'];
 
-    angular.module('deliveryApp').controller('DeliveriesController', DeliveriesController);
+    angular.module('deliveryApp').controller('ClientsController', ClientsController);
 
 }());

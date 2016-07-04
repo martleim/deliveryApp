@@ -1,0 +1,116 @@
+<div class="view">
+    <div class="container">
+        <header>
+            <h3><span class="glyphicon glyphicon-edit"></span> {{title}} Cliente</h3>
+        </header>
+        <form name="editForm" novalidate>
+            
+            
+			<div class="clientEdit half">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4>Datos</h4>
+                        <br />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">
+                        Nombre:
+                    </div>
+                    <div class="col-md-10">
+                        <input type="text" name="name" class="form-control" data-ng-model="client.name" maxlength="200" required />
+                        <span class="errorMessage" ng-show="editForm.name.$dirty && editForm.name.$invalid">
+                            El nombre es requerido
+                        </span>
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-md-2">
+                        Sexo:
+                    </div>
+                    <div class="col-md-10">
+                        <!--input type="text" name="gender" class="form-control" data-ng-model="client.gender" maxlength="200" required /-->
+						<select name="gender" class="form-control" ng-model="client.gender" required>
+						  <option value="m">Hombre</option>
+						  <option value="f">Mujer</option>
+						</select><br>
+                        <span class="errorMessage" ng-show="editForm.gender.$dirty && editForm.gender.$invalid">
+                            El Sexo es requerido
+                        </span>
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-md-2">
+                        Telefono:
+                    </div>
+                    <div class="col-md-10">
+                        <input type="text" name="phone" class="form-control" data-ng-model="client.phone" maxlength="100" required />
+                        <span class="errorMessage" ng-show="editForm.phone.$dirty && editForm.phone.$invalid">
+                            El Telefono es requerido
+                        </span>
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-md-2">
+                        Email:
+                    </div>
+                    <div class="col-md-10">
+                        <input type="email" name="email" class="form-control" data-ng-model="client.email" maxlength="100" required />
+                        <span class="errorMessage" ng-show="editForm.email.$dirty && editForm.email.$invalid">
+                            El Email es requerido
+                        </span>
+                    </div>
+                </div>
+                <br />
+				<div class="row">
+                    <div class="col-md-2">
+                        Edad:
+                    </div>
+                    <div class="col-md-10">
+                        <input type="age" name="age" class="form-control" data-ng-model="client.age" maxlength="100" required />
+                        <span class="errorMessage" ng-show="editForm.age.$dirty && editForm.age.$invalid">
+                            La Edad es requerida
+                        </span>
+                    </div>
+                </div>
+                <br />
+				<div class="row">
+                    <div class="col-md-2">
+                        Direccion:
+                    </div>
+                    <div class="col-md-10">
+                        <input type="address" name="address" class="form-control" data-ng-model="client.address" maxlength="100" required />
+                        <span class="errorMessage" ng-show="editForm.address.$dirty && editForm.address.$invalid">
+                            La Direccion es requerida
+                        </span>
+                    </div>
+                </div>
+                <br />
+            </div>
+            
+                
+            <div class="row">
+                <div class="col-md-12">
+                    <button style="float:right;margin:5px;" class="btn btn-danger" data-ng-if="edit" data-ng-click="navigate('/deliveries')">Cancelar</button>
+                    <button style="float:right;margin:5px;" type="submit" class="btn btn-primary" data-ng-click="save()" ng-disabled="editForm.$invalid || !editForm.$dirty">{{buttonText}}</button>
+                </div>
+            </div>
+            <br />
+            <div class="statusRow">
+                <br />
+                <div class="label label-success" data-ng-show="updateStatus">
+                    <span class="glyphicon glyphicon-thumbs-up icon-white"></span>&nbsp;&nbsp;Cliente Guardado!
+                </div>
+            </div>
+            <div class="statusRow">
+                <br />
+                <div class="label label-important" data-ng-show="errorMessage">
+                    <span class="glyphicon glyphicon-thumbs-down icon-white"></span>&nbsp;&nbsp;Error: {{ errorMessage }}
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

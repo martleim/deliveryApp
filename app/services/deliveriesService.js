@@ -31,11 +31,6 @@
         	return this.getDeliveries(0);
         }
 		
-		factory.getPagedDeliveries = function(pageIndex, pageSize) {
-            var deliveries=(this.filteredDeliveries&&this.filteredDeliveries.length>0)?this.filteredDeliveries:this.deliveries;
-            return { totalRecords:deliveries.length , results:deliveries.slice((pageIndex * pageSize), ((pageIndex+1) * pageSize)) }
-        }
-
         return factory;
     };
 
