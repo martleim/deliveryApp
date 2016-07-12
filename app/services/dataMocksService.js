@@ -16,6 +16,7 @@
 			var urlObj={
 				params:{}
 			};
+			url = url.split(baseUrl)[1];
 			urlObj.base=url;
 			urlObj.route=urlObj.base.split("/");
 			if(url.indexOf("?")>0){
@@ -34,14 +35,14 @@
 		
 		factory.get = function (method,url,data,header) {
             var urlobj=decodeUrl(url);
-			var model=models[urlobj.route[4]];
+			var model=models[urlobj.route[0]];
 			var rets;
 			if(urlobj.params.limit){
 				var from=parseInt(urlobj.params.limit)*parseInt(urlobj.params.start);
 				rets=model.slice(from, from+parseInt(urlobj.params.limit));
 				return [200, {results:rets, totalRecords:model.length }];
 			}else{
-				var name=urlobj.route[5];
+				var name=urlobj.route[1];
 				if(name && name!=""){
 					for(var i=0;i<model.length;i++){
 						if(name==model[i].name){
@@ -58,15 +59,15 @@
         
         factory.post = function (method,url,data,header) {
 			var urlobj=decodeUrl(url);
-			var model=models[urlobj.route[urlobj.route.length-1]];
+			var model=models[urlobj.route[0]];
             model.push(data);
 			return [200, {results:rets, totalRecords:model.length }];
         };
 
         factory.put = function (method,url,data,header) {
             var urlobj=decodeUrl(url);
-			var model=models[urlobj.route[urlobj.route.length-2]];
-			var oldName=urlobj.route[urlobj.route.length-1];
+			var model=models[urlobj.route[0]];
+			var oldName=urlobj.route[1];
             for(var i=0;i<model.length;i++){
                 if(oldName==model[i].name)
                     return model[i]=data;
@@ -75,8 +76,8 @@
 
         factory.delete = function (method,url,data,header) {
             var urlobj=decodeUrl(url);
-			var model=models[urlobj.route[urlobj.route.length-2]];
-			var oldName=urlobj.route[urlobj.route.length-1];
+			var model=models[urlobj.route[0]];
+			var oldName=urlobj.route[1];
             for(var i=0;i<model.length;i++){
                 if(oldName==model[i].name)
                     return model.splice(i,1);
