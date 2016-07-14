@@ -1,9 +1,24 @@
 (function () {
 
 	
-    var app = angular.module("deliveryApp",["ngRoute","ui.bootstrap"])
-	.config( function ($routeProvider){
+    var app = angular.module("deliveryApp",["ngRoute", "ui.bootstrap", 'uiGmapgoogle-maps'])
+	.config( function ($routeProvider, uiGmapGoogleMapApiProvider){
 		var viewBase = appConfig.views;
+		
+		uiGmapGoogleMapApiProvider.configure({
+			    key: appConfig.googleMapKey,
+			v: '3.20', //defaults to latest 3.X anyhow
+			libraries: 'weather,geometry,visualization'
+		});/*.then(function(maps) {
+				console.log('Google Maps loaded');
+				 vm.map = {
+				 center: {
+					latitude: -23.598763,
+					longitude: -46.676547
+				  },
+				  zoom: 13
+			};
+		});*/
 
         $routeProvider
 			.when("/deliveries", {
@@ -29,6 +44,10 @@
             .when("/clientadd", {
                 controller: "ClientEditController",
                 templateUrl: viewBase + "clients/clientEdit.html"
+            })
+			.when("/map", {
+                controller: "MapController",
+                templateUrl: viewBase + "map/map.html"
             })
             .otherwise({ redirectTo: "/deliveries" });
 
