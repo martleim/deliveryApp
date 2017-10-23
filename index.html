@@ -12,12 +12,20 @@
 </head>
 <body data-ng-cloak="">
 
-    <header class="navbar navbar-inner navbar-fixed-top"></header>
+    <header class="navbar navbar-inner navbar-fixed-top" ng-controller="navBarController">
+		<ul class="nav navbar-nav navBarPadding">
+			<li ng-class="{ active: isActive('/deliveries')}"><a href="#/deliveries">Deliveries</a></li>
+			<li ng-class="{ active: isActive('/clients')}"><a href="#/clients">Clientes</a></li>
+			<li ng-class="{ active: isActive('/map')}"><a href="#/map">Mapa</a></li>
+		</ul>
+	</header>
     
     <div data-ng-view="" id="ng-view"></div>
     
     <div id="footer" class="navbar navbar-inner navbar-fixed-bottom"></div>
-
+	<!-- CONFIG -->
+	<script src="app/config.js"></script>
+	
     <!-- JS externos -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.js"></script>
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/1.3.3/ui-bootstrap.js"></script>
@@ -26,20 +34,36 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular-animate.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-mocks.js"></script>
 	
+	<script>
+		var script=document.createElement('script');
+		script.src='//maps.googleapis.com/maps/api/js?sensor=false&key='+appConfig.googleMapKey;
+		document.body.appendChild(script);
+	</script>
+	
+	<script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/4.0.1/lodash.js" type="text/javascript"></script>
+	<script src="http://cdn.rawgit.com/nmccready/angular-simple-logger/master/dist/angular-simple-logger.js"></script>
+	<script src="lib/angular-google-maps.min.js"></script>
+	
+	
+	
     <!-- JS locales -->
-    <script src="app/config.js"></script>
 	<script src="app/app.js"></script>
     <script src="app/services/deliveriesService.js"></script>
+	<script src="app/services/clientsService.js"></script>
     <script src="app/services/dataService.js"></script>
     <script src="app/services/modalService.js"></script>
 	<script src="app/services/dataMocksService.js"></script>
     <script src="app/controllers/deliveries/deliveryEditController.js"></script>
     <script src="app/controllers/deliveries/deliveriesController.js"></script>
+	<script src="app/controllers/clients/clientEditController.js"></script>
+    <script src="app/controllers/clients/clientsController.js"></script>
+	<script src="app/controllers/map/mapController.js"></script>
 	<script src="app/directives/grid.js"></script>
     <script src="app/filters/nameAddressFilter.js"></script>
     
 
 </body>
 </html>
+
 
 

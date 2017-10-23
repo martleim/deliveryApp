@@ -1,14 +1,14 @@
 (function () {
 
-    var DeliveryEditController = function ($rootScope, $scope, $location, $routeParams, $timeout, dataService, modalService) {
+    var ClientEditController = function ($rootScope, $scope, $location, $routeParams, $timeout, dataService, modalService) {
 
-        var deliveryName = ($routeParams.deliveryName) ? $routeParams.deliveryName : "",
+        var clientName = ($routeParams.clientName) ? $routeParams.clientName : "",
             timer,
             onRouteChangeOff;
 
-        $scope.delivery={openTime:"09:00",closeTime:"18:00"};
+        $scope.client={openTime:"09:00",closeTime:"18:00"};
         $scope.states = [];
-        $scope.edit=(deliveryName && deliveryName!="");
+        $scope.edit=(clientName && clientName!="");
         $scope.title = ($scope.edit) ? "Editar" : "Agregar";
         $scope.buttonText = ($scope.edit) ? "Guardar" : "Agregar";
         $scope.updateStatus = false;
@@ -19,33 +19,26 @@
 
         $scope.save = function () {
             if ($scope.editForm.$valid) {
-                var deliveryToSave = angular.copy($scope.delivery);
-                deliveryToSave.openTime=parseDateToTime($scope.delivery.openTime);
-                deliveryToSave.closeTime=parseDateToTime($scope.delivery.closeTime);
-                if (!this.edit) {
-                    dataService.deliveriesService.insertDelivery(deliveryToSave);
-                }
-                else {
-                    dataService.deliveriesService.updateDelivery(deliveryName,deliveryToSave);
-                }
+                var clientToSave = angular.copy($scope.client);
+                
                 processSuccess();
             }
         };
 
         $scope.delete = function () {
-            var name = $scope.delivery.name;
+            var name = $scope.client.name;
 
             var modalOptions = {
                 closeButtonText: 'Cancelar',
-                actionButtonText: 'Eliminar Delivery',
+                actionButtonText: 'Eliminar Client',
                 headerText: 'Eliminar ' + name + '?',
-                bodyText: 'Esta seguro que desea eliminar este Delivery?'
+                bodyText: 'Esta seguro que desea eliminar este Client?'
             };
 
             modalService.showModal({}, modalOptions).then(function (result) {
                 if (result === 'ok') {
-                    dataService.deliveriesService.deleteDelivery(name);
-                    $scope.updateDeliveries();
+                    dataService.clientsService.deleteClient(name);
+                    $scope.updateClients();
                 }
             });
         };
@@ -70,14 +63,10 @@
         }
 
         function init() {
-			dataService.deliveriesService.getDelivery(deliveryName).then(function(ret){
+			dataService.clientsService.getClient(clientName).then(function(ret){
 				
-				if (deliveryName != "") {
-					$scope.delivery = angular.copy(ret.data.result);
-				}
-				if($scope.delivery){
-					$scope.delivery.openTime=parseTimeToDate($scope.delivery.openTime);
-					$scope.delivery.closeTime=parseTimeToDate($scope.delivery.closeTime);
+				if (clientName != "") {
+					$scope.client = angular.copy(ret.data.result);
 				}
 				onRouteChangeOff = $rootScope.$on('$locationChangeStart', routeChange);
 				
@@ -127,15 +116,15 @@
                 $timeout.cancel(timer);
                 $scope.errorMessage = '';
                 $scope.updateStatus = false;
-                $scope.navigate('/deliveries');
+                $scope.navigate('/clients');
             }, 1000);
         }
 
     };
 
-    DeliveryEditController.$inject = ["$rootScope", "$scope", "$location", "$routeParams",
+    ClientEditController.$inject = ["$rootScope", "$scope", "$location", "$routeParams",
                                       "$timeout", "dataService", "modalService"];
 
-    angular.module("deliveryApp").controller("DeliveryEditController", DeliveryEditController);
+    angular.module("deliveryApp").controller("ClientEditController", ClientEditController);
 
 }());

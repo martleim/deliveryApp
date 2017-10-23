@@ -16,6 +16,7 @@
 			var urlObj={
 				params:{}
 			};
+			url = url.split(baseUrl)[1];
 			urlObj.base=url;
 			urlObj.route=urlObj.base.split("/");
 			if(url.indexOf("?")>0){
@@ -34,34 +35,51 @@
 		
 		factory.get = function (method,url,data,header) {
             var urlobj=decodeUrl(url);
-			var model=models[urlobj.route[urlobj.route.length-2]];
-			var from=parseInt(urlobj.params.limit)*parseInt(urlobj.params.start);
-			var rets=model.slice(from, from+parseInt(urlobj.params.limit));
-			return [200, {results:rets, totalRecords:model.length }];
-
+			var model=models[urlobj.route[0]];
+			var rets;
+			if(urlobj.params.limit){
+				var from=parseInt(urlobj.params.limit)*parseInt(urlobj.params.start);
+				rets=model.slice(from, from+parseInt(urlobj.params.limit));
+				return [200, {results:rets, totalRecords:model.length }];
+			}else{
+				var name=urlobj.route[1];
+				if(name && name!=""){
+					for(var i=0;i<model.length;i++){
+						if(name==model[i].name){
+							rets = model[i];
+							return [200, {result:rets }];
+						}
+					}
+				}else{
+					return [200, {results:model}];
+				}
+			}
+			
         };
         
         factory.post = function (method,url,data,header) {
 			var urlobj=decodeUrl(url);
-			var model=models[urlobj.route[urlobj.route.length-1]];
+			var model=models[urlobj.route[0]];
             model.push(data);
 			return [200, {results:rets, totalRecords:model.length }];
         };
 
         factory.put = function (method,url,data,header) {
             var urlobj=decodeUrl(url);
-			var model=models[urlobj.route[urlobj.route.length-2]];
+			var model=models[urlobj.route[0]];
+			var oldName=urlobj.route[1];
             for(var i=0;i<model.length;i++){
                 if(oldName==model[i].name)
-                    return model[i]=delivery;
+                    return model[i]=data;
             }
         };
 
         factory.delete = function (method,url,data,header) {
             var urlobj=decodeUrl(url);
-			var model=models[urlobj.model];
+			var model=models[urlobj.route[0]];
+			var oldName=urlobj.route[1];
             for(var i=0;i<model.length;i++){
-                if(name==model[i].name)
+                if(oldName==model[i].name)
                     return model.splice(i,1);
             }
         };
@@ -73,12 +91,15 @@
 		
 		
 		for(var modelUrl in appConfig.models){
-			$http.get(baseUrl+"app/services/"+modelUrl+".json").then(
-				function(result){
-					models[modelUrl]=result.data;
-				}
-			);
-			
+			var loadingModel=modelUrl;
+			var loadModel=function(loadingModel,models){
+				$http.get(baseUrl+"app/services/"+loadingModel+".json").then(
+					function(result){
+						models[loadingModel]=result.data;
+					}
+				);
+			}
+			loadModel(loadingModel,models);
 			var url=new RegExp(baseUrl + modelUrl + "+.*");
 
 			$httpBackend.whenGET(url).respond(factory.get);
